@@ -123,33 +123,33 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 
-// let marks = +prompt("Pick a grade");
+let marks = +prompt("Pick a grade");
 
-// switch (marks) {
-//   case marks > 80:
-//     console.log("AA");
-//     break;
-//   case marks >= 90 && marks <= 80:
-//     console.log("AB");
-//     break;
-//   case marks >= 79 && marks <= 70:
-//     console.log("BB");
-//     break;
-//   case marks >= 69 && marks <= 60:
-//     console.log("BC");
-//     break;
-//   case marks >= 59 && marks <= 50:
-//     console.log("CC");
-//     break;
-//   case marks >= 49 && marks <= 40:
-//     console.log("CD");
-//     break;
-//   case marks >= 39 && marks <= 30:
-//     console.log("DD");
-//     break;
-//   default:
-//     console.log("FF");
-// }
+switch (true) {
+  case marks > 80:
+    console.log("AA");
+    break;
+  case marks >= 90 && marks <= 80:
+    console.log("AB");
+    break;
+  case marks >= 79 && marks <= 70:
+    console.log("BB");
+    break;
+  case marks >= 69 && marks <= 60:
+    console.log("BC");
+    break;
+  case marks >= 59 && marks <= 50:
+    console.log("CC");
+    break;
+  case marks >= 49 && marks <= 40:
+    console.log("CD");
+    break;
+  case marks >= 39 && marks <= 30:
+    console.log("DD");
+    break;
+  default:
+    console.log("FF");
+}
 
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
@@ -189,22 +189,22 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 
 // [Your code goes here]
 
-let numA = +prompt("Pick a number?");
-let numB = prompt("Pick a sign? + - * /");
-let numC = +prompt("Pick a number?");
+// let numA = +prompt("Pick a number?");
+// let numB = prompt("Pick a sign? + - * /");
+// let numC = +prompt("Pick a number?");
 
-if (numB == "+") {
-  alert(numA + numC);
-} else if (numB == "*") {
-  alert(numA * numC);
-} else if (numB == "-" && numC > numA) {
-  alert(`Invalid Selection: ${numC} is larger than ${numA}. Please try again`);
-} else if (numB == "-") {
-  alert(numA - numC);
-} else if (numB == "/" && numC > numA) {
-  alert(`Invalid Selection: ${numC} is larger than ${numA}. Please try again`);
-} else if (numB == "/") {
-  alert(numA / numC);
-} else {
-  alert("System error. Please try again");
-}
+// if (numB == "+") {
+//   alert(numA + numC);
+// } else if (numB == "*") {
+//   alert(numA * numC);
+// } else if (numB == "-" && numC > numA) {
+//   alert(`Invalid Selection: ${numC} is larger than ${numA}. Please try again`);
+// } else if (numB == "-") {
+//   alert(numA - numC);
+// } else if (numB == "/" && numC > numA) {
+//   alert(`Invalid Selection: ${numC} is larger than ${numA}. Please try again`);
+// } else if (numB == "/") {
+//   alert(numA / numC);
+// } else {
+//   alert("System error. Please try again");
+// }
