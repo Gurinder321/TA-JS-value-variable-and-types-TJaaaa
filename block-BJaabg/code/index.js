@@ -16,3 +16,8 @@ var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
+
+while (PHONE_PRICE < SPENDING_THRESHOLD) {
+  let test = PHONE_PRICE * SPENDING_THRESHOLD;
+}
+console.log(test);
