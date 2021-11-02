@@ -11,13 +11,29 @@ const TAX_RATE = 0.08;
 const PHONE_PRICE = 99.99;
 const ACCESSORY_PRICE = 9.99;
 
-var bank_balance = 303.91;
+var bank_balance = 3003.91;
 var amount = 0;
 // your code goes here
 
 // ⛑ Answer of the above will `$334.76`.
 
-while (PHONE_PRICE < SPENDING_THRESHOLD) {
-  let test = PHONE_PRICE * SPENDING_THRESHOLD;
+while (amount < bank_balance) {
+  amount = amount + PHONE_PRICE;
+  if (amount < SPENDING_THRESHOLD) {
+    amount = amount + ACCESSORY_PRICE;
+  }
 }
-console.log(test);
+
+let tax = amount * TAX_RATE;
+
+let totalAmount = amount + tax;
+
+console.log(amount);
+console.log(tax);
+console.log(totalAmount);
+
+if (totalAmount < bank_balance) {
+  console.log("You can afford it");
+} else {
+  console.log("You can't afford it");
+}
